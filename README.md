@@ -13,4 +13,4 @@ Department of<br/> Computer Software Engineering
 
 멋쟁이 사자처럼 7기 교육에 사용된 **장고 예제 파일**을 저장하는 레파지토리입니다.
 
-#### 1. Hello World! [[코드]](https://github.com/LikeLionSCH/Django_Example/tree/master/firstproject)
+#### 1. Hello World! [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/firstproject)
