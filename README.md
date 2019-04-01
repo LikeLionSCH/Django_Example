@@ -15,4 +15,4 @@ Department of<br/> Computer Software Engineering
 
 #### 1. Hello World! [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/firstproject)
 
-<img src="./result_image/helloworld.png" width="600" height="auto">
+<img src="/result_image/helloworld.png" width="600" height="auto">
