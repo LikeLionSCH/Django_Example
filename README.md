@@ -13,13 +13,19 @@ Department of<br/> Computer Software Engineering
 
 멋쟁이 사자처럼 7기 교육에 사용된 **장고 예제 파일**을 저장하는 레파지토리입니다.
 
-#### 1. Hello World! [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/firstproject)
+#### 1. Hello World! [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/1_firstproject)
 
 <br/>
-<img src="/result_image/helloworld.png" width="400" height="auto">
+<img src="/result_image/helloworld.png" width="400" height="auto" alt="아직 안만듬">
 
 
-#### 2. Lotto [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/secondproject)
+#### 2. Lotto [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/2_secondproject)
 
 <br/>
 <img src="/result_image/lotto.png" width="400" height="auto" alt="아직 안만듬">
+
+
+#### 3. Word Count [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/3_thirdproject)
+
+<br/>
+<img src="/result_image/wordcount.png" width="400" height="auto" alt="아직 안만듬">
