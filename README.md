@@ -22,5 +22,4 @@ Department of<br/> Computer Software Engineering
 #### 2. Lotto [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/secondproject)
 
 <br/>
-<img src="/result_image/lotto1.png" width="300" height="auto" alt="아직 안만듬">
-<img src="/result_image/lotto2.png" width="300" height="auto" alt="아직 안만듬">
+<img src="/result_image/lotto1.png" width="300" height="auto" alt="아직 안만듬"><img src="/result_image/lotto2.png" width="300" height="auto" alt="아직 안만듬">
