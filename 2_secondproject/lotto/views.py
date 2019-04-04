@@ -13,8 +13,6 @@ def home(request):
 
         lotto.append(random_num)
 
-    lotto.sort()
-
     return render(request, "home.html", {
         "first": lotto[0],
         "second": lotto[1],
