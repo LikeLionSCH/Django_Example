@@ -21,4 +21,5 @@ def home(request):
         "fifth": lotto[4],
         "sixth": lotto[5],
         "bonus": lotto[6],
+        "lotto": lotto,
     })
