@@ -29,3 +29,9 @@ Department of<br/> Computer Software Engineering
 
 <br/>
 <img src="/result_image/wordcount.png" width="400" height="auto" alt="아직 안만듬">
+
+
+#### 4. My Info [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/4_fourthproject)
+
+<br/>
+<img src="/result_image/myinfo.png" width="600" height="auto" alt="아직 안만듬">
