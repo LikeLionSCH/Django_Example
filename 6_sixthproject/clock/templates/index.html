@@ -1,0 +1,43 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>현재 시간은?</title>
+
+    <link rel="stylesheet" href="{% static './css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+
+    <script type="text/javascript" src="{% static './js/main.js' %}"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <p>현재 시각은</p>
+
+            <p>
+                <strong> {{ now.month }} </strong> 월
+                <strong> {{ now.day }} </strong> 일
+                <strong> {{ weekday }} </strong>요일
+            </p>
+
+            <p>
+                {% if check %}
+                오후
+                {% else %}
+                오전
+                {% endif %}
+
+                <strong> {{ hour }} </strong> 시
+                <strong> {{ now.minute }} </strong> 분
+                <strong> {{ now.second }} </strong> 초
+                입니다.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

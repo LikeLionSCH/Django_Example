@@ -36,7 +36,14 @@ Department of<br/> Computer Software Engineering
 <br/>
 <img src="/result_image/myinfo.png" width="600" height="auto" alt="아직 안만듬">
 
+
 #### 5. Model [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/5_fifthproject)
 
 <br/>
 <img src="/result_image/model.png" width="600" height="auto" alt="아직 안만듬">
+
+
+#### 6. Clock [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/6_sixthproject)
+
+<br/>
+<img src="/result_image/clock.png" width="600" height="auto" alt="아직 안만듬">
