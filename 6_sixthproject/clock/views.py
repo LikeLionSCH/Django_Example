@@ -3,10 +3,16 @@ from django.utils import timezone
 
 # Create your views here.
 
+
+def fill_zero(num):
+    if num < 10:
+        return "0" + str(num)
+
+    return num
+
+
 def index(request):
     now = timezone.localtime()
-
-    check = (now.hour >= 12)
 
     weekday = {
         0: "월",
@@ -18,9 +24,19 @@ def index(request):
         6: "일",
     }
 
+    month = fill_zero(now.month)
+    day = fill_zero(now.day)
+    hour = fill_zero(now.hour)
+    minute = fill_zero(now.minute)
+    second = fill_zero(now.second)
+
     return render(request, "index.html", {
         "now": now,
         "weekday": weekday[now.weekday()],
-        "hour": now.hour % 12,
-        "check": check,
+        "month": month,
+        "day": day,
+        "hour": hour % 12,
+        "minute": minute,
+        "second": second,
+        "check": now.hour >= 12,
     })

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="{% static './css/main.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
-    <script type="text/javascript" src="{% static './js/main.js' %}"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="{% static './js/main.js' %}"></script>
 </head>
 
 <body>
@@ -19,8 +20,8 @@
             <p>현재 시각은</p>
 
             <p>
-                <strong> {{ now.month }} </strong> 월
-                <strong> {{ now.day }} </strong> 일
+                <strong> {{ month }} </strong> 월
+                <strong> {{ day }} </strong> 일
                 <strong> {{ weekday }} </strong>요일
             </p>
 
@@ -32,8 +33,8 @@
                 {% endif %}
 
                 <strong> {{ hour }} </strong> 시
-                <strong> {{ now.minute }} </strong> 분
-                <strong> {{ now.second }} </strong> 초
+                <strong> {{ minute }} </strong> 분
+                <strong> {{ second }} </strong> 초
                 입니다.
             </p>
         </div>
