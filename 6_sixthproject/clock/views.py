@@ -7,7 +7,6 @@ def index(request):
     now = timezone.localtime()
 
     return render(request, "index.html", {
-        "now": now,
         "weekday": now.weekday(),
         "month": now.month,
         "day": now.day,

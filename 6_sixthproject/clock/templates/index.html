@@ -14,8 +14,8 @@
         function clock() {
             var currentDate = new Date();
             var check = "오전";
-            var month = currentDate.getMonth() + 1;
-            var day = currentDate.getDate();
+            var month = addZeros(currentDate.getMonth() + 1, 2);
+            var day = addZeros(currentDate.getDate(), 2);
             var hour = addZeros(currentDate.getHours(), 2);
             var minute = addZeros(currentDate.getMinutes(), 2);
             var second = addZeros(currentDate.getSeconds(), 2);
@@ -78,11 +78,11 @@
 
             <p>
                 <span id="check">
-                {% if check %}
-                오후
-                {% else %}
-                오전
-                {% endif %}
+                    {% if check %}
+                    오후
+                    {% else %}
+                    오전
+                    {% endif %}
                 </span>
 
                 <strong id="hour"> {{ hour }} </strong> 시
