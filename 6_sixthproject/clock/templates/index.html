@@ -15,11 +15,20 @@
             var currentDate = new Date();
             var check = "오전";
             var month = currentDate.getMonth() + 1;
-            var weekday = currentDate.getDay();
-            var date = currentDate.getDate();
+            var day = currentDate.getDate();
             var hour = addZeros(currentDate.getHours(), 2);
             var minute = addZeros(currentDate.getMinutes(), 2);
             var second = addZeros(currentDate.getSeconds(), 2);
+
+            var weekday = {
+                0: "월",
+                1: "화",
+                2: "수",
+                3: "목",
+                4: "금",
+                5: "토",
+                6: "일",
+            }
 
             if (hour >= 12) {
                 check = "오후";
@@ -32,7 +41,8 @@
 
             document.getElementById("check").innerHTML = check;
             document.getElementById("month").innerHTML = month;
-            document.getElementById("date").innerHTML = date;
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("weekday").innerHTML = weekday["{{ weekday }}"];
             document.getElementById("hour").innerHTML = hour;
             document.getElementById("minute").innerHTML = minute;
             document.getElementById("second").innerHTML = second;
@@ -62,7 +72,7 @@
 
             <p>
                 <strong id="month"> {{ month }} </strong> 월
-                <strong id="date"> {{ day }} </strong> 일
+                <strong id="day"> {{ day }} </strong> 일
                 <strong id="weekday"> {{ weekday }} </strong>요일
             </p>
 
