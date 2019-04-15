@@ -8,7 +8,7 @@
     <title>현재 시간은?</title>
 
     <link rel="stylesheet" href="{% static './css/main.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 
     <script>
         function clock() {
@@ -36,7 +36,7 @@
             }
 
             if (second >= 50) {
-                second = '<span style="color:#de1951;">' + second + '</span>'
+                second = '<span style="color:#cc0000;">' + second + '</span>'
             }
 
             document.getElementById("check").innerHTML = check;
