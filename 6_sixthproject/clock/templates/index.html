@@ -11,30 +11,74 @@
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="{% static './js/main.js' %}"></script>
+    <script>
+        function clock() {
+            var currentDate = new Date();
+            var check = "오전";
+            var month = currentDate.getMonth() + 1;
+            var weekday = currentDate.getDay();
+            var date = currentDate.getDate();
+            var hour = addZeros(currentDate.getHours(), 2);
+            var minute = addZeros(currentDate.getMinutes(), 2);
+            var second = addZeros(currentDate.getSeconds(), 2);
+
+            if (hour >= 12) {
+                check = "오후";
+                hour = addZeros(hour - 12, 2);
+            }
+
+            if (second >= 50) {
+                second = '<span style="color:#de1951;">' + second + '</span>'
+            }
+
+            document.getElementById("check").innerHTML = check;
+            document.getElementById("month").innerHTML = month;
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("hour").innerHTML = hour;
+            document.getElementById("minute").innerHTML = minute;
+            document.getElementById("second").innerHTML = second;
+
+            setTimeout("clock()", 1000);
+        }
+
+        function addZeros(num, digit) {
+            var zero = '';
+            num = num.toString();
+
+            if (num.length < digit) {
+                for (i = 0; i < digit - num.length; i++) {
+                    zero += '0';
+                }
+            }
+
+            return zero + num;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="clock()">
     <div id="wrapper">
         <div id="content">
             <p>현재 시각은</p>
 
             <p>
-                <strong> {{ month }} </strong> 월
-                <strong> {{ day }} </strong> 일
-                <strong> {{ weekday }} </strong>요일
+                <strong id="month"> {{ month }} </strong> 월
+                <strong id="date"> {{ day }} </strong> 일
+                <strong id="weekday"> {{ weekday }} </strong>요일
             </p>
 
             <p>
+                <span id="check">
                 {% if check %}
                 오후
                 {% else %}
                 오전
                 {% endif %}
+                </span>
 
-                <strong> {{ hour }} </strong> 시
-                <strong> {{ minute }} </strong> 분
-                <strong> {{ second }} </strong> 초
+                <strong id="hour"> {{ hour }} </strong> 시
+                <strong id="minute"> {{ minute }} </strong> 분
+                <strong id="second"> {{ second }} </strong> 초
                 입니다.
             </p>
         </div>

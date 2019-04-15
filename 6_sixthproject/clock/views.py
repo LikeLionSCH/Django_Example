@@ -3,14 +3,6 @@ from django.utils import timezone
 
 # Create your views here.
 
-
-def fill_zero(num):
-    if num < 10:
-        return "0" + str(num)
-
-    return num
-
-
 def index(request):
     now = timezone.localtime()
 
@@ -24,11 +16,11 @@ def index(request):
         6: "일",
     }
 
-    month = fill_zero(now.month)
-    day = fill_zero(now.day)
-    hour = fill_zero(now.hour)
-    minute = fill_zero(now.minute)
-    second = fill_zero(now.second)
+    month = now.month
+    day = now.day
+    hour = now.hour
+    minute = now.minute
+    second = now.second
 
     return render(request, "index.html", {
         "now": now,
