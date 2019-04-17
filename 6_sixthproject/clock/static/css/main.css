@@ -24,7 +24,7 @@ p {
 }
 
 strong {
-    color: #F5951C;
+    color: #f48b00;
     font-size: 45px;
 }
 
@@ -39,6 +39,6 @@ strong {
 #content {
     transform: translate(50%, 100%);
     border: 2px solid;
-    border-color: #F5951C;
+    border-color: #f48b00;
     padding: 50px 0px 50px 0px;
 }
