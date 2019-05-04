@@ -47,3 +47,9 @@ Department of<br/> Computer Software Engineering
 
 <br/>
 <img src="/result_image/clock.gif" width="320" height="auto" alt="아직 안만듬">
+
+
+#### 7. CRUD [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/7_seventhproject)
+
+<br/>
+<img src="/result_image/CRUD.png" width="320" height="auto" alt="아직 안만듬">
