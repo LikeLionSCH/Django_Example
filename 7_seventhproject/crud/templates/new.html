@@ -1,1 +1,11 @@
 <h1> This is new.html </h1>
+
+<form action="{% url 'create' %}">
+    <input type="text" name="title">
+    <br>
+    <br>
+    <textarea name="body" rows="8" cols="80" placeholder="입력하세요"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="글 저장">
+</form>
