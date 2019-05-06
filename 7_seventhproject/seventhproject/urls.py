@@ -20,4 +20,6 @@ import crud.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', crud.views.index, name="index"),
+    path('new/', crud.views.new, name="new"),
+    path('create/', crud.views.create, name="create"),
 ]
