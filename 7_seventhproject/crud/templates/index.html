@@ -1,3 +1,11 @@
 <h1> Hello World! </h1>
 
 <a href="{% url 'new' %}"> 글 쓰기 </a>
+
+{% for post in posts %}
+    <h1> 제목 : {{ post.title }} </h1>
+    <p> 작성 시간 : {{ post.created_at_to_str }} </p>
+    <p> 수정 시간 : {{ post.updated_at_to_str }}</p>
+    <p> 미리 보기 : {{ post.preview }} </p>
+    <a href=""> 자세히 보기</a>
+{% endfor %}
