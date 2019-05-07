@@ -22,4 +22,7 @@ urlpatterns = [
     path('', crud.views.index, name="index"),
     path('new/', crud.views.new, name="new"),
     path('create/', crud.views.create, name="create"),
+    path('read/<int:id>', crud.views.read, name="read"),
+    path('update/<int:id>', curd.views.update, name="update"),
+    path('delete/<int:id>', crud.views.delete, name="delete"),
 ]

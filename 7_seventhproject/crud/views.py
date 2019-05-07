@@ -28,3 +28,15 @@ def create(request):
     post.save()
 
     return redirect("index")
+
+
+def read(request):
+    pass
+
+
+def update(request):
+    pass
+
+
+def delete(request):
+    pass
