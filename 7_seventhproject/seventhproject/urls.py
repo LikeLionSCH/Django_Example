@@ -22,7 +22,8 @@ urlpatterns = [
     path('', crud.views.index, name="index"),
     path('new/', crud.views.new, name="new"),
     path('create/', crud.views.create, name="create"),
-    path('read/<int:id>', crud.views.read, name="read"),
-    path('update/<int:id>', curd.views.update, name="update"),
-    path('delete/<int:id>', crud.views.delete, name="delete"),
+    path('read/<int:post_id>', crud.views.read, name="read"),
+    path('update/<int:post_id>', crud.views.update, name="update"),
+    path('update_page/<int:post_id>', crud.views.update_page, name="update_page"),
+    path('delete/<int:post_id>', crud.views.delete, name="delete"),
 ]
