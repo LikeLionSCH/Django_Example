@@ -1,4 +1,4 @@
-"""eightproject URL Configuration
+"""eighthproject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -19,5 +19,5 @@ import user_auth.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', user_auth.views.index, name="index"),
+    path('', user_auth.views.index, name="inedx"),
 ]
