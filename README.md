@@ -53,3 +53,10 @@ Department of<br/> Computer Software Engineering
 
 <br/>
 <img src="/result_image/CRUD.gif" width="500" height="auto" alt="아직 안만듬">
+
+
+#### 8. Static/Media [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/8_eightthproject)
+
+<br/>
+
+<img src="/result_image/static-media.png" width="500" height="auto" alt="아직 안만듬">
