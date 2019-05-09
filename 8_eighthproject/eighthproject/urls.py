@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import user_auth.views
+import static_media.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', user_auth.views.index, name="inedx"),
+    path('', static_media.views.index, name="inedx"),
 ]
