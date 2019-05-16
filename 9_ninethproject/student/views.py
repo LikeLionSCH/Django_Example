@@ -12,7 +12,7 @@ def index(request):
 
 
 def create_page(request):
-    return render(request, "new.html", {
+    return render(request, "create_page.html", {
 
     })
 
