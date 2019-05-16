@@ -58,7 +58,7 @@ def update(request, id):
 def update_page(request, id):
     student = get_object_or_404(Student, pk=id)
 
-    return render(request, "update.html", {
+    return render(request, "update_page.html", {
         "student": student,
     })
 
