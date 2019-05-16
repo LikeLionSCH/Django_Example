@@ -52,7 +52,7 @@ Department of<br/> Computer Software Engineering
 #### 7. CRUD [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/7_seventhproject)
 
 <br/>
-<img src="/result_image/CRUD.gif" width="500" height="auto" alt="아직 안만듬">
+<img src="/result_image/CRUD.gif" width="300" height="auto" alt="아직 안만듬">
 
 
 #### 8. Static/Media [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/8_eighthproject)
@@ -66,4 +66,4 @@ Department of<br/> Computer Software Engineering
 
 <br/>
 
-<img src="/result_image/student_info.png" width="500" height="auto" alt="아직 안만듬">
+<img src="/result_image/student_info.gif" width="500" height="auto" alt="아직 안만듬">
