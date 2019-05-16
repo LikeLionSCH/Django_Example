@@ -1,0 +1,19 @@
+<h1> {{ student.name }} 학생 정보</h1>
+
+<p> 학과 : {{ student.department }} </p>
+<p> 학번 : {{ student.student_number }} </p>
+<p> 입학년도 : {{ student.admission_year }} </p>
+<p> 학년 : {{ student.level }} </p>
+<p> 평균 학점 : {{ student.grade_avg }} </p>
+<div>
+    <div style="float: left; padding-right:20px;">
+        <form action="{% url 'update' student.id %}">
+            <input type="submit" value="수정">
+        </form>
+    </div>
+    <div style="float: left;">
+        <form action="{% url 'delete' student.id %}">
+            <input type="submit" value="삭제">
+        </form>
+    </div>
+</div>

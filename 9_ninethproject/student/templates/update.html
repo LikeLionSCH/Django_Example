@@ -1,0 +1,36 @@
+<head>
+    <style>
+        input {
+            height: 40px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<h1> 학생 정보를 업데이트 페이지 입니다. </h1>
+
+<a href="{% url 'index' %}">홈으로</a>
+<br>
+<br>
+
+<form action="{% url 'update' student.id %}">
+    <input type="text" value="{{ student.name }}" name="name">
+    <br>
+
+    <input type="text" value="{{ student.department }}" name="department">
+    <br>
+
+    <input type="text" value="{{ student.admission_year }}" name="admission_year">
+    <br>
+
+    <input type="text" value="{{ student.student_number }}" name="student_number">
+    <br>
+
+    <input type="text" value="{{ student.level }}" name="level">
+    <br>
+    <input type="text" value="{{ student.grade_avg }}" name="grade_avg">
+    <br>
+    <br>
+
+    <input type="submit" value="저장하기">
+</form>

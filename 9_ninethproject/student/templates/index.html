@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>학생 정보 관리 홈페이지</title>
+    <style>
+        div {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 500px;
+        }
+
+        th {
+            border: 1px solid #444444;
+        }
+
+        td {
+            padding: 20px;
+            border: 1px solid #444444;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="{% url 'new' %}"><button>새로운 학생 저장</button></a>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th> 이름 </th>
+                <th> 학과 </th>
+                <th> 학번 </th>
+                <th> 입학년도 </th>
+                <th> 학년 </th>
+                <th> 평균 학점 </th>
+                <th> 자세히 </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <th> {{ student.name }} </th>
+                <td> {{ student.department }} </td>
+                <td> {{ student.student_number }} </td>
+                <td> {{ student.admission_year }} </td>
+                <td> {{ student.level }} </td>
+                <td> {{ student.grade_avg }} </td>
+                <td> <a href="{% url 'read' student.id %}">자세히</a> </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

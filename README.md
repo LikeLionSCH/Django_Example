@@ -60,3 +60,10 @@ Department of<br/> Computer Software Engineering
 <br/>
 
 <img src="/result_image/static-media.png" width="500" height="auto" alt="아직 안만듬">
+
+
+#### 9. Student Info [[프로젝트]](https://github.com/LikeLionSCH/Django_Example/tree/master/9_nineproject)
+
+<br/>
+
+<img src="/result_image/student_info.png" width="500" height="auto" alt="아직 안만듬">
