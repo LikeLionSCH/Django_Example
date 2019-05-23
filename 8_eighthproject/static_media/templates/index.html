@@ -8,6 +8,18 @@
         <title>STATIC & MEDIA</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1> Static & Media </h1>
+
+        {% for blog in blogs %}
+            <div id="blog">
+                {% if blog.image.url is not None %}
+                <img src="{{ blog.image.url }}" alt="" width="500px">
+                {% endif %}
+
+                <h2> {{ blog.title }} </h2>
+                <p> {{ blog.body }} </p>
+                <p> {{ blog.time }} </p>
+            </div>
+        {% endfor %}
     </body>
 </html>
